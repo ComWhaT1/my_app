@@ -1,0 +1,39 @@
+<!-- FILEPATH: /d:/Project/Fluter Pro/my_app/lib/table.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Form</title>
+  <style>
+    /* Add your custom styles here */
+  </style>
+</head>
+<body>
+  <form>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Input Assignment</th>
+          <th>Output Assignment</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Add your table rows here -->
+      </tbody>
+    </table>
+    <button type="submit">Save</button>
+    <button type="button" onclick="openModal()">Edit</button>
+  </form>
+
+  <div id="modal" style="display: none;">
+    <!-- Add your modal content here -->
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById("modal").style.display = "block";
+    }
+  </script>
+</body>
+</html>

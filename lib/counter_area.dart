@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class CounterArea extends StatefulWidget {
@@ -24,26 +23,28 @@ class _CounterAreaState extends State<CounterArea> {
           onPressed: () {
             count += 1;
             print('OK : $count');
-            setState(() {
-              
-            });
+            setState(() {});
           },
           child: SizedBox(
             width: 200,
             height: 60,
-            child: Row(    
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Icon(Icons.add_box_rounded, size: 50,),             
-                Text('เพิ่ม' ,style: TextStyle(fontSize: 30),
-                    textAlign: TextAlign.center,),
+                Icon(
+                  Icons.add_box_rounded,
+                  size: 50,
+                ),
+                Text(
+                  'เพิ่ม',
+                  style: TextStyle(fontSize: 30),
+                  textAlign: TextAlign.center,
+                ),
               ],
             ),
           ),
-         
         ),
       ],
-      
     );
   }
 }
